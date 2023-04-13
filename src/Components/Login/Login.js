@@ -5,7 +5,7 @@ import { LoginForm } from './LoginForm'
 import { LoginCreate } from './LoginCreate';
 import { LoginPasswordLost } from './LoginPasswordLost';
 import { LoginPasswordReset} from './LoginPasswordReset';
-import { Conta } from '../Conta';
+import {  User } from '../User';
 
 import { UserContext } from '../../UserContext';
 
@@ -26,7 +26,7 @@ export const Login = () => {
             <Route path="criar" element={<LoginCreate />} />
             <Route path="perdeu" element={<LoginPasswordLost />} />
             <Route path="resetar" element={<LoginPasswordReset />} />
-            <Route path="conta" element={<Conta />} />
+            <Route path="conta" element={<User />} />
           </Routes>
         </div>
       </section>

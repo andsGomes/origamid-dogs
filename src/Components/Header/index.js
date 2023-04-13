@@ -1,14 +1,13 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
-import style from './Header.module.css'
-import { ReactComponent as Dogs } from '../../Assets/dogs.svg';
+import style from "./Header.module.css";
+import { ReactComponent as Dogs } from "../../Assets/dogs.svg";
 
-import { UserContext } from '../../UserContext';
+import { UserContext } from "../../UserContext";
 
-export const Header = () => {  
-  
-  const { data, userLogout } = React.useContext(UserContext);
+export const Header = () => {
+  const { data } = React.useContext(UserContext);
 
   return (
     <header className={style.header}>
@@ -19,7 +18,7 @@ export const Header = () => {
         {data ? (
           <Link className={style.login} to="/conta">
             {data.nome}
-            <button onClick={userLogout}>Sair</button>
+            {/* <button onClick={userLogout}>Sair</button> */}
           </Link>
         ) : (
           <Link className={style.login} to="/login">
@@ -29,6 +28,6 @@ export const Header = () => {
       </nav>
     </header>
   );
-}
+};
 
 //CLG-WPNXRPB-1
