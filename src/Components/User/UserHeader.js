@@ -23,7 +23,7 @@ export const UserHeader = () => {
   }, [location]);
   
   return (
-    <header className={styles.header}>
+    <header className={`${styles.header} animeLeft`}>
       <h1 className="title">{title}</h1>
       <UserHeaderNav />
     </header>

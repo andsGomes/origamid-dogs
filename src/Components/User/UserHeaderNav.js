@@ -12,7 +12,7 @@ import { useMedia } from '../../Hooks/useMedia';
 
 export const UserHeaderNav = () => {
   const { userLogout } = React.useContext(UserContext);
-  const mobile = useMedia("(max-width: 40rem)");
+  const mobile = useMedia("(max-width: 45rem)");
   const [mobileMenu, setMobileMenu] = React.useState(false);
 
   const { pathname } = useLocation();

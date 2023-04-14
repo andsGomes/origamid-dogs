@@ -1,14 +1,15 @@
 import React from 'react'
 
-import style from './Home.module.css'; 
+//import style from './Home.module.css'; 
+import { Feed } from '../Feed/index';
 
 export const Home = () => {
   return (
-    <div className={style.home}>
-      <div className="container">
-        Home
-      </div>
-    </div>
+     <>
+      <section className='container mainContainer'>
+        <Feed />
+      </section>
+     </>
   )
 }
 

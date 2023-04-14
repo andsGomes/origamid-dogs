@@ -99,7 +99,7 @@
   transform: initial;
   opacity: 1;
   pointer-events: initial;
-  z-index: 100;
+  z-index: 999;
 }
 
 .navMobile a,
@@ -112,6 +112,7 @@
   border-bottom: 1px solid #eee;
   padding: 0.5rem 0;
   cursor: pointer;
+  z-index: 999;
 }
 
 .navMobile a:hover,
