@@ -1,15 +1,14 @@
-import React from 'react'
-
-//import style from './Home.module.css'; 
-import { Feed } from '../Feed/index';
+import React from "react";
+import { Feed } from "../Feed/Feeds";
+import { Head } from "../Helper/Head";
 
 export const Home = () => {
   return (
-     <>
-      <section className='container mainContainer'>
+    <>
+      <section className="container mainContainer">
+        <Head title="Fotos" description="" />
         <Feed />
       </section>
-     </>
-  )
-}
-
+    </>
+  );
+};

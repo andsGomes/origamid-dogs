@@ -11,6 +11,7 @@ import { UserContext } from '../../UserContext';
 
 import styles from './LoginForm.module.css';
 import style from '../Form/Button/Button.module.css'
+import { Head } from "../Helper/Head";
 
 
 
@@ -29,6 +30,7 @@ export const LoginForm = () => {
 
   return (
     <>
+    <Head title='Login' />
       <section className="animeLeft">
         <h1 className="title">Login</h1>
         <form className={ styles.form } onSubmit={handleSubmit}>

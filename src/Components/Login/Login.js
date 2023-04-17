@@ -5,11 +5,13 @@ import { LoginForm } from './LoginForm'
 import { LoginCreate } from './LoginCreate';
 import { LoginPasswordLost } from './LoginPasswordLost';
 import { LoginPasswordReset} from './LoginPasswordReset';
+import { NotFound } from '../NotFound';
 import {  User } from '../User';
 
 import { UserContext } from '../../UserContext';
 
 import styles from './Login.module.css';
+
 
 export const Login = () => {
 
@@ -27,6 +29,7 @@ export const Login = () => {
             <Route path="perdeu" element={<LoginPasswordLost />} />
             <Route path="resetar" element={<LoginPasswordReset />} />
             <Route path="conta" element={<User />} />
+            <Route path='*' element={<NotFound />} />
           </Routes>
         </div>
       </section>
